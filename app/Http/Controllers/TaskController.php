@@ -19,12 +19,12 @@ class TaskController extends Controller
         ]);
     }
 
-    public function detail($id)
-    {
-        // Mendapatkan detail tugas berdasarkan ID
-        $task = Task::findOrFail($id);
+    // public function detail($id)
+    // {
+    //     // Mendapatkan detail tugas berdasarkan ID
+    //     $task = Task::findOrFail($id);
 
-        // Mengirim data ke view
-        return view('tasks.detail', compact('task'));
-    }
+    //     // Mengirim data ke view
+    //     return view('tasks.detail', compact('task'));
+    // }
 }
